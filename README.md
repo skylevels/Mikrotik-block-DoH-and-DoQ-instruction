@@ -1145,6 +1145,7 @@ add address=doh.cleanbrowsing.org disabled=no dynamic=no list=DoH_blacklist
 add address=dns10.quad9.net disabled=no dynamic=no list=DoH_blacklist
 add address=dns11.quad9.net disabled=no dynamic=no list=DoH_blacklist
 add address=wikimedia-dns.org disabled=no dynamic=no list=DoH_blacklist
+add address=doh-dns-apple-com.v.aaplimg.com disabled=no dynamic=no list=DoH_blacklist
 ```
 </details>
 
