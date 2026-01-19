@@ -5,10 +5,9 @@ Mikrotik disable DoH and DoQ instruction
 Начнем со списка открытых DoH серверов, который загрузим в firewall address-list для ipv4 и ipv6 фаерволов
 
 <details>
-<summary>Загружаем address-list в ipv4 фаервол</summary>
+<summary>Загружаем address-list в ipv4 фаервол командой /ip firewall address-list </summary>
   
 ``` 
-/ip firewall address-list
 add address=resolver1.absolight.net disabled=no dynamic=no list=DoH_blacklist
 add address=resolver2.absolight.net disabled=no dynamic=no list=DoH_blacklist
 add address=resolver3.absolight.net disabled=no dynamic=no list=DoH_blacklist
@@ -573,6 +572,7 @@ add address=doh.cleanbrowsing.org disabled=no dynamic=no list=DoH_blacklist
 add address=dns10.quad9.net disabled=no dynamic=no list=DoH_blacklist
 add address=dns11.quad9.net disabled=no dynamic=no list=DoH_blacklist
 add address=wikimedia-dns.org disabled=no dynamic=no list=DoH_blacklist
+add address=doh-dns-apple-com.v.aaplimg.com disabled=no dynamic=no list=DoH_blacklist
 ```
 </details>
 
